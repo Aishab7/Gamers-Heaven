@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="icon" href="../assets/images/final logo.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        // دالة لتشغيل صوت السلاح الأول
+        function playScarSound() {
+            var scarSound = document.getElementById("scar-audio"); // جلب الصوت من خلال الـ ID
+            scarSound.play(); // تشغيل الصوت
+        }
+
+        // دالة لتشغيل صوت السلاح الثاني
+        function playSniperSound() {
+            var sniperSound = document.getElementById("sniper-audio"); // جلب الصوت من خلال الـ ID
+            sniperSound.play(); // تشغيل الصوت
+        }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+
+        <header id="header">
+    
+            <nav id="Navigation">
+                <ul class="links">
+                    <a href="../pages/index.html">Home</a>
+                    <a href="../pages/news.html">News</a>
+                    <a href="../pages/about us .html">About us</a>
+                    <a href="../pages/games.html">Games</a>
+                    <a href="../pages/login.html">Login</a>
+                    <span> </span>
+                </ul>
+            </nav>
+    
+                <label>
+                    <input type="checkbox" id="menu-toggle">
+                    <div class="toggle">
+                        <div class="top_line"></div>
+                        <div class="top_line"></div>
+                        <div class="top_line"></div>
+                        
+                    </div>
+                    <div class="slide">
+                        <h1>MENU</h1>
+                        <ul>
+                            <li><a href="../index.html"> <i class="fas fa-tv"></i> Home </a></li>
+                            <li><a href="../pages/profile.html"> <i class="fas fa-user"></i> Profile </a></li>
+                            <li><a href="../pages/news.html"> <i class="fas fa-newspaper"></i> News </a></li>
+                            <li><a href="../pages/about.html"> <i class="fas fa-info-circle"></i> About Us </a></li>
+                            <li><a href="../pages/games.html"> <i class="fas fa-gamepad"></i> Games </a></li>
+                            <li><a href="../pages/login.html"> <i class="fas fa-sign-in-alt"></i> Login </a></li>
+                        </ul>
+                    </div>
+                </label>
+                <form>
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class="search-input" type="search" placeholder="Search">
+                    </div>
+                </form>
+        </header>
+    <section class="game-section">
+        <video autoplay muted loop class="game-video">
+            <source src="../assets/video/Fortnite.mp4" type="video/mp4">
+        </video>
+        <div class="game-info">
+            <h2>Fortnite</h2>
+            <p>Fortnite is an exciting battle royale game with unique building mechanics.
+                Frequent updates and collaborations keep the game fresh and engaging.
+                Every match is a fast-paced adventure, whether playing solo or with friends!
+            </p>
+        </div>
+    </section>
+    <div class="divider">
+        <img src="../assets/images/fortnite 4.jpg" alt="Divider">
+    </div>
+    <h2 class="characters-title">Fortnite Skins</h2>
+    <section class="characters">
+        <div class="character-fortnite">
+            <img src="../assets/images/skin fortnite john.png" alt="John Wick">
+            <div class="character-info">
+                <h2>The Reaper (John Wick)</h2>
+                <p>Description: Known as “John Wick” by players.</p>
+                <p>How to Obtain: Battle Pass Season 3 reward.</p>
+            </div>
+        </div>
+        <div class="character-fortnite">
+            <img src="../assets/images/skin fortnite trooper.png" alt=" Trooper">
+            <div class="character-info">
+                <h2>Aerial Assault Trooper</h2>
+                <p>Rarity: Extremely rare, was available in the Item Shop during Season 1.</p>
+                <p>	Why is it rare? Very few players purchased it at the time.</p>
+            </div>
+        </div>
+        <div class="character-fortnite">
+            <img src="../assets/images/skin fortnite.png" alt="Renegade">
+            <div class="character-info">
+                <h2>Renegade Raider</h2>
+                <p>Fame: One of the oldest and rarest skins in the game.</p>
+                <p>How to Obtain: Available only during Chapter 1 - Season 1
+                </p>
+      
+            </div>
+        </div>
+    </section>
+    <div class="divider">
+        <img src="../assets/images/fortnite 10.webp" alt="Divider">
+    </div>
+    <h2 class="weapon-title">Fire & Listen</h2>
+
+    <section class="weapon-sound">
+        <!-- السلاح الأول -->
+        <div class="weapon-item">
+            <img src="../assets/images/scar.png" alt="Scar Weapon" class="scar" onclick="playScarSound()">
+            <div class="weapon-info">
+                <h3>Scar</h3>
+                <p>Damage: 36 damage per shot and 54 headshot damage.</p>
+               <p>Accuracy: Very high accuracy.</p>
+               <p>Fire rate: 5.5 shots per second.</p>
+               <p>Magazine: Contains 30 bullets.</p>
+               <p>Reload time: 2.1 seconds.</p>
+               <p>Ideal usage: Effective for mid to long-range engagements,
+                 and headshots are recommended to maximize damage.</p>
+            </div>
+            <audio id="scar-audio">
+                <source src="../assets/sound/Scar (Fortnite) .mp3" type="audio/mp3">
+            </audio>
+        </div>
+        
+        <!-- السلاح الثاني -->
+        <div class="weapon-item">
+            <img src="../assets/images/sniper.png" alt="Sniper Weapon" class="sniper" onclick="playSniperSound()">
+            <div class="weapon-info">
+                <h3>Heavy Sniper</h3>
+                <p>Damage: 110 damage per shot and 220 headshot damage.</p>
+                <p>Accuracy: Extremely high accuracy.</p>
+                <p>Fire rate: Very slow.</p>
+                <p>Magazine: Contains only one shot.</p>
+                <p>Reload time: 2.7 seconds.</p>
+                <p>Ideal usage: Effective for long-range engagements,
+                 and headshots are recommended to guarantee a one-shot kill.</p>
+            </div>
+            <audio id="sniper-audio">
+                <source src="../assets/sound/heavy sniper.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"> <i class="fa-brands fa-discord"></i> </a>
+                <a href="#"> <i class="fa-brands fa-github"></i> </a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li> <a href="../pages/index.html"> Home</a> </li>
+                    <li> <a href=""> News</a> </li>
+                    <li> <a href="../pages/about.html"> about us</a> </li>
+                    <li> <a href="../pages/sign up.html"> sign up</a> </li>
+                    <li> <a href="../pages/login.html"> login</a> </li>
+                </ul>
+            </div>
+            <div class="footerBottom ">
+                <p>Copyright &copy;2025; Designed by Aisha and Farah </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

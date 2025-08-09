@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1024px) {
+
+  #Navigation {
+    display: none !important;
+}
+.search {
+  position: absolute !important;
+  right: 10px !important;
+  top: 20px !important;
+  z-index: 1 !important;
+}
+
+#Firsth h3, #Games {
+  font-size: 25px !important;
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.video{
+  margin-top: 70px !important;
+
+}
+#videoplay {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.container {
+  text-align: center !important;
+  display: block !important;
+}
+
+.news-section {
+  display: flex !important;
+  flex-direction: column !important;  
+  gap: 20px !important;
+}
+#Go{
+  left: 250px !important;
+}
+#News, #Go {
+  display: inline-block !important;
+  margin-right: 0 !important;
+  top: 95% !important; 
+}
+.news-section {
+  grid-template-columns: 1fr !important; 
+}
+.news-card {
+  width: 100% !important;
+}
+
+
+.intro {
+  flex-direction: column !important; 
+  text-align: center !important;
+  height: auto !important;
+}
+
+.intro-content {
+  max-width: 100% !important;
+  margin-bottom: 20px !important; 
+}
+
+.intro h1 {
+  font-size: 3em !important; 
+}
+
+.intro p {
+  font-size: 1.5em !important; 
+}
+
+.intro-image {
+  height: auto !important; 
+  max-width: 100% !important; 
+}
+
+.container {
+  width: 80%; 
+  padding: 20px;
+  margin-left: 0; 
+  margin-right: 10%; 
+}
+.container h1 {
+  font-size: 50px!important;
+  margin-bottom: 50px!important;
+}
+.container p {
+  font-size: 16px!important;
+}
+.container h2 {
+  font-size: 25px!important;
+}
+.contact-section h2 {
+  font-size: 50px!important;
+}
+.contact-form {
+  padding: 15px!important;
+  max-width: 100%!important;
+}
+.contact-form button {
+  font-size: 1em!important;
+}
+}
+
+
+
